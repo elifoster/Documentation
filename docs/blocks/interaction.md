@@ -64,7 +64,17 @@ Another common use for activation is, well, activation. This can be something li
 
 Player Break/Destroy
 --------------------
-*Coming Soon*
+### `breakBlock`
+
+This method is called when the block is broken. It is called before the tile entity, if it has one, is removed from the world
+
+A common usage for this method is to handle the dropping of a block's inventory items.
+
+It has no return value.
+
+#### Parameters
+
+The parameters are the current world (`World`), position (`BlockPos`), and state (`IBlockState`) of the block. These should all be obvious.
 
 Player Highlighting
 -------------------
